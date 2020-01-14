@@ -1,0 +1,28 @@
+{
+  "name": "mustread",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:igorkamyshev/mustread.git",
+  "author": "Igor Kamyshev <igor@kamyshev.me>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.pug",
+    "s": "yarn soda"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@solid-soda/scripts": "^1.15.2",
+    "parcel-bundler": "^1.12.4",
+    "pug": "^2.0.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn soda lint-staged",
+      "pre-push": "yarn soda lint",
+      "commit-msg": "yarn soda commitlint"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
