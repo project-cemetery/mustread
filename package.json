@@ -7,6 +7,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "parcel src/index.pug",
+    "build": "parcel build src/index.pug",
     "s": "yarn soda"
   },
   "dependencies": {},
