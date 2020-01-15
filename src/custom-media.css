@@ -1,0 +1,6 @@
+/* custom media queries */
+@custom-media --phoneDown (max-width: 839px);
+@custom-media --phoneUp (min-width: 840px);
+
+@custom-media --smallPhoneDown (max-width: 399px);
+@custom-media --smallPhoneUp (min-width: 400px);

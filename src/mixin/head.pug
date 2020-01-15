@@ -1,13 +1,12 @@
-head
+mixin head(interactive=false)
   title Обязательно прочти!
   
-  link(rel='stylesheet', href='./styles.css')
+  link(rel='stylesheet', href='../styles.css')
   
   meta(name="viewport", content="width=device-width, initial-scale=1")
   meta(name="description" content="Невероятный список книг, которые стоит прочитать кажому разработчику")
 
-  body
-    main(class="main")
-      != md(mustread)
+  if interactive
+    script(src='../interactive/index.js' defer)
 
-      p(class="github") Ставьте звездочки и присылайте пулл-реквесты на <a href="https://github.com/igorkamyshev/mustread">GitHub</a>
+  <META HTTP-EQUIV="Access-Control-Allow-Origin" CONTENT="http://localhost:61799/">

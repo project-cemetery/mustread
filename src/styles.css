@@ -1,43 +1,130 @@
+/* fonts */
+@font-face {
+  font-family: 'Steinbeck';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/steinbeck-regular.woff2') format('woff2'),
+    url('./fonts/steinbeck-regular.woff') format('woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Steinbeck';
+  font-style: italic;
+  font-weight: normal;
+  src: url('./fonts/steinbeck-italic.woff2') format('woff2'),
+    url('./fonts/steinbeck-italic.woff') format('woff');
+  font-display: swap;
+}
+
+:root {
+  --color-primary: blue;
+  --color-secondary: rgb(255, 59, 106);
+  --main-font: 'Steinbeck', -apple-system, BlinkMacSystemFont,
+    'Apple Color Emoji', Arial, sans-serif;
+
+  --header: 24px/110% var(--main-font);
+  --subheader: 22px/110% var(--main-font);
+  --text: 18px/125% var(--main-font);
+
+  @media (--smallPhoneDown) {
+    --header: 20px/110% var(--main-font);
+    --subheader: 17px/110% var(--main-font);
+    --text: 14px/125% var(--main-font);
+  }
+}
+
+::selection {
+  color: white;
+  background-color: color-mod(var(--color-secondary) alpha(0.99));
+}
+
+* {
+  box-sizing: border-box;
+  scrollbar-color: transparent transparent;
+  scrollbar-width: thin;
+
+  /* not in standart, but so cute =) */
+  &::-webkit-scrollbar {
+    width: 4px;
+    padding-right: 10px;
+  }
+
+  &:hover {
+    scrollbar-color: blue transparent;
+  }
+}
+
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', Arial,
-    sans-serif;
+  width: 100vw;
+  margin: 0px;
+  font-family: var(--main-font);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
 }
 
 .main {
-  max-width: 800px;
-  padding: calc(1rem + 1vw);
+  max-width: 670px;
 
-  & > h2 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 28px;
-    letter-spacing: 0.002em;
+  & > h3 {
+    font: var(--header);
     margin-block-start: 40px;
     margin-block-end: 8px;
+
+    &:first-of-type {
+      margin-block-start: 8px;
+    }
   }
 
   & > p {
-    font-size: 15px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 18px;
-    letter-spacing: 0.003em;
+    font: var(--text);
     margin-block-start: 8px;
     margin-block-end: 8px;
   }
 
-  & > h2 + p {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 22px;
-    letter-spacing: 0.002em;
+  & > h3 + p {
+    font: var(--subheader);
     margin-block-start: 12px;
     margin-block-end: 12px;
   }
 
   & > .github {
-    margin-block-start: 80px;
+    margin-block-start: 68px;
+
+    @media (--smallPhoneDown) {
+      margin-block-start: 48px;
+    }
   }
+
+  & > .about {
+    margin-block-end: 40px;
+  }
+}
+
+.standalone {
+  padding: 12px;
+
+  @media (--phoneUp) {
+    padding: 24px;
+  }
+
+  & > h3 {
+    font: var(--header);
+    margin-block-start: 40px;
+    margin-block-end: 8px;
+  }
+
+  overflow: scroll;
+}
+
+.embedded {
+  padding: 0 24px 60px 24px;
 }

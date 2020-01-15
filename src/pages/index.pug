@@ -1,0 +1,11 @@
+include ../mixin/head.pug
+
+html
+  +head()
+  body
+    main(class="main standalone")
+      p.about Привет, меня зовут Игорь, веду канал в Телеграме <a href="https://tlinks.ru/kamyshev_code">kamyshev.code</a>, делаю фронтенды в <a href="https://samokat.ru">Самокате</a> и ещё <a href="https://kamyshev.me">много разных штук</a>. Ниже спиок книг, которые, на мой взгляд, стоит прочесть каждому разработчику. Порядок имеет значение.
+
+      != md(mustread)
+
+      p(class="github") Ставьте звездочки и присылайте пулл-реквесты на <a href="https://github.com/igorkamyshev/mustread">GitHub</a>
