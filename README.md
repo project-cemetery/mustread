@@ -1,7 +1,7 @@
 # mustread
 
 Список хороших книг о разработке программ.
-+ [Читать на сайте](https://mustread.kamyshev.me)
++ [Читать на сайте](https://read.kamyshev.me)
 + [Читать на GitHub](./mustread.md)
 
 ## Как добавить книгу
