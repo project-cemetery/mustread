@@ -36,4 +36,8 @@ body {
     margin-block-start: 12px;
     margin-block-end: 12px;
   }
+
+  & > .github {
+    margin-block-start: 80px;
+  }
 }
