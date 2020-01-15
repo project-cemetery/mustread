@@ -13,6 +13,7 @@
   "dependencies": {},
   "devDependencies": {
     "@solid-soda/scripts": "^1.15.2",
+    "marked": "^0.8.0",
     "parcel-bundler": "^1.12.4",
     "pug": "^2.0.4"
   },
