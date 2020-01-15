@@ -13,8 +13,10 @@
   "dependencies": {},
   "devDependencies": {
     "@solid-soda/scripts": "^1.15.2",
+    "autoprefixer": "^9.7.4",
     "marked": "^0.8.0",
     "parcel-bundler": "^1.12.4",
+    "postcss-nesting": "^7.0.1",
     "pug": "^2.0.4"
   },
   "husky": {

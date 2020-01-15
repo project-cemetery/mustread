@@ -7,8 +7,5 @@ head
   meta(name="description" content="Невероятный список книг, которые стоит прочитать кажому разработчику")
 
   body
-    main
-      p Скоро тут будут красивые и удобные стили, а пока есть только список.
-
-      section
-        != md(mustread)
+    main(class="main")
+      != md(mustread)

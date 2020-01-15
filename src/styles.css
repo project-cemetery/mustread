@@ -1,0 +1,39 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Apple Color Emoji', Arial,
+    sans-serif;
+}
+
+.main {
+  max-width: 800px;
+  padding: calc(1rem + 1vw);
+
+  & > h2 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px;
+    letter-spacing: 0.002em;
+    margin-block-start: 40px;
+    margin-block-end: 8px;
+  }
+
+  & > p {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: 0.003em;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+  }
+
+  & > h2 + p {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 22px;
+    letter-spacing: 0.002em;
+    margin-block-start: 12px;
+    margin-block-end: 12px;
+  }
+}
