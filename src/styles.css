@@ -109,22 +109,6 @@ a {
   }
 }
 
-.standalone {
-  padding: 12px;
-
-  @media (--phoneUp) {
-    padding: 24px;
-  }
-
-  & > h3 {
-    font: var(--header);
-    margin-block-start: 40px;
-    margin-block-end: 8px;
-  }
-
-  overflow: scroll;
-}
-
 .embedded {
   padding: 0 24px 60px 24px;
 }

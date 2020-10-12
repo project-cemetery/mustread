@@ -6,7 +6,7 @@
   "author": "Igor Kamyshev <igor@kamyshev.me>",
   "license": "MIT",
   "scripts": {
-    "dev": "concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/embedded.pug\" \"parcel watch src/pages/standalone.pug\"",
+    "dev": "concurrently --kill-others \"parcel src/pages/index.pug\" \"parcel watch src/pages/embedded.pug\"",
     "build": "parcel build src/pages/*",
     "s": "yarn soda"
   },
